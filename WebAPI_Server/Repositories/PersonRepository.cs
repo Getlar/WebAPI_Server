@@ -12,39 +12,47 @@ namespace WebAPI_Server.Repositories
     {
         public static IList<Person> GetPeople()
         {
-            var appDataPath = GetAppDataPath();
-            if (File.Exists(appDataPath))
+            using (var database = new PersonContext())
             {
-                var rawContent = File.ReadAllText(appDataPath);
-                var people = JsonSerializer.Deserialize<IList<Person>>(rawContent);
+                var people = database.People.ToList();
                 return people;
-            }
-            return new List<Person>();
+            };
         }
 
-        public static void StorePeople(IList<Person> people)
+        public static Person GetPerson(int id)
         {
-            var appDataPath = GetAppDataPath();
-            var rawContent = JsonSerializer.Serialize(people);
-            File.WriteAllText(appDataPath, rawContent);
-        }
-
-        public static string GetAppDataPath()
-        {
-            var localAppFolder = GetLocalFolder();
-            var appDataPath = Path.Combine(localAppFolder, "People.json");
-            return appDataPath;
-        }
-
-        public static string GetLocalFolder()
-        {
-            var localAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-            var localAppFolder = Path.Combine(localAppData, "WebAPI_Server");
-            if (!Directory.Exists(localAppFolder))
+            using (var database = new PersonContext())
             {
-                Directory.CreateDirectory(localAppFolder);
-            }
-            return localAppFolder;
+                var person = database.People.Where(p => p.id == id).FirstOrDefault();
+                return person;
+            };
+        }
+
+        public static void StorePerson(Person person)
+        {
+            using (var database = new PersonContext())
+            {
+                database.People.Add(person);
+                database.SaveChanges();
+            };
+        }
+        public static void UpdatePerson(Person person)
+        {
+            using (var database = new PersonContext())
+            {
+
+                database.People.Update(person);
+                database.SaveChanges();
+
+            };
+        }
+        public static void DeletePerson(Person person)
+        {
+            using (var database = new PersonContext())
+            {
+                database.People.Remove(person);
+                database.SaveChanges();
+            };
         }
     }
 }

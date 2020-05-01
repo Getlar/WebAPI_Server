@@ -23,10 +23,9 @@ namespace WebAPI_Server.Controllers
 
         [HttpGet("{id}")]
 
-        public ActionResult<Person> Get(long id)
+        public ActionResult<Person> Get(int id)
         {
-            var people = PersonRepository.GetPeople();
-            var person = people.FirstOrDefault(x => x.id == id);
+            var person = PersonRepository.GetPerson(id);
             if (person != null)
             {
                 return Ok(person);
@@ -40,65 +39,32 @@ namespace WebAPI_Server.Controllers
         [HttpPost]
         public ActionResult Post(Person person)
         {
-            var people = PersonRepository.GetPeople();
-            var newId = GetNewId(people);
-            person.id = newId;
-            people.Add(person);
-            PersonRepository.StorePeople(people);
+            PersonRepository.StorePerson(person);
             return Ok();
         }
 
-        [HttpPut]
-        public ActionResult Put(Person person)
+        [HttpPut("{id}")]
+        public ActionResult Put(Person person,int id)
         {
-            var people = PersonRepository.GetPeople();
-            var oldPerson = people.FirstOrDefault(x => x.id == person.id);
-            if (oldPerson != null)
+            var dbperson = PersonRepository.GetPerson(id);
+            if (dbperson !=null)
             {
-                oldPerson.firstName = person.firstName;
-                oldPerson.lastName = person.lastName;
-                oldPerson.dateOfBirth = person.dateOfBirth;
+                PersonRepository.UpdatePerson(person);
+                return Ok();
             }
-            else
-            {
-                var newId = GetNewId(people);
-                person.id = newId;
-                people.Add(person);
-            }
-            PersonRepository.StorePeople(people);
-            return Ok();
+            return NotFound();
         }
 
         [HttpDelete("{id}")]
-        public ActionResult Delete(int id)
+        public ActionResult DeletePerson(int id)
         {
-            var people = PersonRepository.GetPeople();
-            var peron = people.FirstOrDefault(x => x.id == id);
-            if (peron != null)
+            var person = PersonRepository.GetPerson(id);
+            if (person != null)
             {
-                people.Remove(peron);
-                PersonRepository.StorePeople(people);
+                PersonRepository.DeletePerson(person);
                 return Ok();
             }
-            else
-            {
-                return NotFound();
-            }
-        }
-
-        private int GetNewId(IList<Person> people)
-        {
-            int id = 0;
-
-            foreach (var person in people)
-            {
-                if(id < person.id)
-                {
-                    id = person.id;
-                }
-            }
-
-            return id + 1;
+            return NotFound();
         }
     }
 }
