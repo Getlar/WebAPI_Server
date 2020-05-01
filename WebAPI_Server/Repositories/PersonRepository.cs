@@ -23,7 +23,7 @@ namespace WebAPI_Server.Repositories
         {
             using (var database = new PersonContext())
             {
-                var person = database.People.Where(p => p.id == id).FirstOrDefault();
+                var person = database.People.Where(p => p.Id == id).FirstOrDefault();
                 return person;
             };
         }
