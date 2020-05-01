@@ -9,13 +9,29 @@ namespace WebAPI_Server.Models
     public class Person
     {
         [Key]
-        public int id{ get; set; }
+        public int Id{ get; set; }
         [Required]
-        [MaxLength(40)]
-        public string firstName{ get; set; }
+        public DateTime DateOfArrival { get; set; }
+        [Required]
+        [MaxLength(20)]
+        public string FirstName{ get; set; }
+        [Required]
+        [MaxLength(20)]
+        public string LastName{ get; set; }
+        [Required]
+        public DateTime DateOfBirth { get; set; }
+        [Required]
         [MaxLength(50)]
-        public string lastName{ get; set; }
-        public DateTime dateOfBirth { get; set; }
+        public string Address { get; set;}
+        [Required]
+        [MaxLength(11)]
+        public string SocialSecurityNumber { get; set; }
+        [Required]
+        [MaxLength(200)]
+        public string Complaint { get; set; }
+
+        [MaxLength(200)]
+        public string Diagnosis { get; set; }
 
     }
 }
