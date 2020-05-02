@@ -1,4 +1,4 @@
-<a href="http://fvcproductions.com"><img src="https://avatars1.githubusercontent.com/u/4284691?v=3&s=200" title="FVCproductions" alt="FVCproductions"></a>
+<a href="http://fvcproductions.com"><img src="https://www.google.com/search?q=healthcare+minimalist+picture+transparent&rlz=1C1CHBF_enHU873HU873&source=lnms&tbm=isch&sa=X&ved=2ahUKEwikjPTPo5bpAhXItYsKHa8qDjgQ_AUoAXoECAwQAw&biw=2560&bih=1339#imgrc=7u8Ivf1KKEQyXM" title="FVCproductions" alt="FVCproductions"></a>
 
 <!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
 
