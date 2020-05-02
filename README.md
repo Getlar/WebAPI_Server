@@ -10,13 +10,13 @@
 
 
 ### Autentikációs lehetőség
-(https://i.imgur.com/c280YNU.png)
+<img src="https://i.imgur.com/c280YNU.png" title="HealthCare" alt="Imgur">
 
 ### Felhasználói felület - Orvos
-(https://i.imgur.com/bNf9Nad.png)
+<img src="https://i.imgur.com/bNf9Nad.png" title="HealthCare" alt="Imgur">
 
 ### Felhasználói felület - Asszisztens
-(https://i.imgur.com/xGLP4jZ.png)
+<img src="https://i.imgur.com/xGLP4jZ.png" title="HealthCare" alt="Imgur">
 
 
 - Most people will glance at your `README`, *maybe* star it, and leave
