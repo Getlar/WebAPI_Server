@@ -39,6 +39,10 @@
 - [Features](#features)
 - [Support](#support)
 - [License](#license)
+- [Usage](#usage)
+- [Features](#features)
+- [Documentation](#documentation)
+- [Tests](#tests)
 
 ### Appreciation Code! :)
 ```C
@@ -49,19 +53,27 @@ while(viewer.IsWatching()){
 
 ```
 
+
+
 ## Installation
 
 - Klónozás
 - Web Service elindítása
 - Orvos és asszisztens alkalmazás elindítása
 
+
+
 ### Az Orvos klienst megtalálod a következő link-en:
 
 - <a href="https://github.com/Getlar/WebAPI_Client_Doctor">Orvos</a>
 
+
+
 ### Az Asszisztens klienst megtalálod a következő link-en:
 
 - <a href="https://github.com/Getlar/WebAPI_Client_Assistant">Asszisztens</a>
+
+
 
 
 ## Features
