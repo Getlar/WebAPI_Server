@@ -10,13 +10,13 @@
 
 
 ### Autentikációs lehetőség
-(https://i.imgur.com/c280YNU.png)]()
+(https://i.imgur.com/c280YNU.png)
 
 ### Felhasználói felület - Orvos
-(https://i.imgur.com/bNf9Nad.png)]()
+(https://i.imgur.com/bNf9Nad.png)
 
 ### Felhasználói felület - Asszisztens
-(https://i.imgur.com/xGLP4jZ.png)]()
+(https://i.imgur.com/xGLP4jZ.png)
 
 
 - Most people will glance at your `README`, *maybe* star it, and leave
