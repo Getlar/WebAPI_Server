@@ -30,7 +30,7 @@
 
 **Recordit**
 
-![Recordit GIF](https://s3.amazonaws.com/img0.recordit.co/jsn9sHQQV1.mp4?AWSAccessKeyId=AKIAUQ5RURZ7ND2T2B6I&Expires=1588465640&Signature=g0rGtnl7Qzaqcp9Z9gkfJgNP1G4%3D)
+![](ursula.gif)
 
 **ttystudio**
 
