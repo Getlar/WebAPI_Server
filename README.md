@@ -1,14 +1,10 @@
-<a href="http://fvcproductions.com"><img src="https://i.imgur.com/6rVsaXk.png" title="FVCproductions" alt="FVCproductions"></a>
+<img src="https://i.imgur.com/6rVsaXk.png" title="HealthCare" alt="Imgur">
 
-<!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
+# Orvos - Asszisztens (Kliens - Szerver)
 
-***INSERT GRAPHIC HERE (include hyperlink in image)***
+> Egészségügyben használt szoftver "makettprogramja". Képes a doktor és asszisztens közötti kommunikációra és adattárolásra.
 
-# Repository Title Goes Here
-
-> Subtitle or Short Description Goes Here
-
-> ideally one sentence
+> Egy orvosi rendelőben működő kliens – szerver alkalmazás.
 
 > include terms/tags that can be searched
 
