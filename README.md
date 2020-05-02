@@ -43,11 +43,13 @@
 - [Support](#support)
 - [License](#license)
 
+### Appreciation Code! :)
 ```C
 
 while(viewer.IsWatching()){
   hopeYouEnjoy = true;
 }
+
 ```
 
 ## Installation
