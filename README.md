@@ -9,33 +9,28 @@
 ## Rövid Galéria
 
 
-### Autentikációs lehetőség
+### Autentikációs lehetőség (Orvos és Asszisztens egyaránt)
+
 <img src="https://i.imgur.com/c280YNU.png" title="HealthCare" alt="Imgur">
 
 ### Felhasználói felület - Orvos
+
 <img src="https://i.imgur.com/bNf9Nad.png" title="HealthCare" alt="Imgur">
 
 ### Felhasználói felület - Asszisztens
+
 <img src="https://i.imgur.com/xGLP4jZ.png" title="HealthCare" alt="Imgur">
 
 
-- Most people will glance at your `README`, *maybe* star it, and leave
-- Ergo, people should understand instantly what your project is about based on your repo
-
-> Tips
-
-- HAVE WHITE SPACE
-- MAKE IT PRETTY
-- GIFS ARE REALLY COOL
-
-> GIF Tools
+- Autentikáció adatbázison keresztül történik.
+- Minden orvosnak/asszisztensnek külön belépési név-belépési kód biztosítás
 
 - Use <a href="http://recordit.co/" target="_blank">**Recordit**</a> to create quicks screencasts of your desktop and export them as `GIF`s.
 - For terminal sessions, there's <a href="https://github.com/chjj/ttystudio" target="_blank">**ttystudio**</a> which also supports exporting `GIF`s.
 
 **Recordit**
 
-![Recordit GIF](http://g.recordit.co/iLN6A0vSD8.gif)
+![Recordit GIF](https://recordit.co/jsn9sHQQV1)
 
 **ttystudio**
 
