@@ -25,22 +25,15 @@
 - Autentikáció adatbázison keresztül történik.
 - Minden orvosnak/asszisztensnek külön belépési név-belépési kód biztosítás
 
-- Use <a href="http://recordit.co/" target="_blank">**Recordit**</a> to create quicks screencasts of your desktop and export them as `GIF`s.
-- For terminal sessions, there's <a href="https://github.com/chjj/ttystudio" target="_blank">**ttystudio**</a> which also supports exporting `GIF`s.
-
-**Recordit**
+**Autentikáció akcióban**
 
 ![](ursula.gif)
 
-**ttystudio**
+**Adatbevitel akcióban**
 
-![ttystudio GIF](https://raw.githubusercontent.com/chjj/ttystudio/master/img/example.gif)
-
----
+![](http://g.recordit.co/6x6kktPhQt.gif)
 
 ## Table of Contents (Optional)
-
-> If your `README` has a lot of info, section headers might be nice.
 
 - [Installation](#installation)
 - [Features](#features)
