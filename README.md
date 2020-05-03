@@ -8,15 +8,17 @@
 
 ## Rövid Galéria
 
-
+</br></br>
 ### Autentikációs lehetőség (Orvos és Asszisztens egyaránt)
 
 <img src="https://i.imgur.com/c280YNU.png" title="HealthCare" alt="Imgur">
 
+</br></br>
 ### Felhasználói felület - Orvos
 
 <img src="https://i.imgur.com/bNf9Nad.png" title="HealthCare" alt="Imgur">
 
+</br></br>
 ### Felhasználói felület - Asszisztens
 
 <img src="https://i.imgur.com/xGLP4jZ.png" title="HealthCare" alt="Imgur">
@@ -53,7 +55,7 @@ while(viewer.IsWatching()){
 ```
 
 
-
+</br></br>
 ## Installation
 
 - Klónozás
@@ -61,25 +63,25 @@ while(viewer.IsWatching()){
 - Orvos és asszisztens alkalmazás elindítása
 
 
-
+</br></br>
 ### Az Orvos klienst megtalálod a következő link-en:
 
 - <a href="https://github.com/Getlar/WebAPI_Client_Doctor" target="_blank">Orvos</a>
 
 
-
+</br></br>
 ### Az Asszisztens klienst megtalálod a következő link-en:
 
 - <a href="https://github.com/Getlar/WebAPI_Client_Assistant" target="_blank">Asszisztens</a>
 
 
-
+</br></br>
 ## Features
 
-
+</br></br>
 **A szoftver a következő funkciókkal lett ellátva:**
 
-
+</br></br>
 - Asszisztens oldalon minden dolgozó egyedi felhasznaló/kód kombinációt kérhet adatbiztonság érdekében.
 - Asszisztens oldalon páciensek felvétele adatbázisba ezzel rögzítve az érkező betegeket.
 - Asszisztens oldalon már rögzített páciensek érkezési idejének módosítása orvos kérésére.
@@ -93,13 +95,13 @@ while(viewer.IsWatching()){
 - Orvos oldalon diagnózis beírása.
 - Orvos oldalon adatbázis frissítése asszisztens oldalon való módosítás esetén.
 - Orvos oldalon páciensek eltávolítása az adatbázisból.
-
+</br></br>
 
 ## Documentation
 
 ## Tests
 
-
+</br></br>
 **Kliens oldalon használt Unit Test-ek**
 
 
@@ -167,7 +169,7 @@ while(viewer.IsWatching()){
 
 ```
 
-
+</br></br>
 ## Support
 
 A következő helyeken megtalálhatsz!
@@ -178,7 +180,7 @@ A következő helyeken megtalálhatsz!
 
 ---
 
-
+</br></br>
 ## License
 
 Copyright (C) <2020>  <Takács Tamás>
