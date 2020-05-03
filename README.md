@@ -36,11 +36,11 @@
 
 - [Installation](#installation)
 - [Features](#features)
-- [Support](#support)
-- [License](#license)
-- [Features](#features)
 - [Documentation](#documentation)
 - [Tests](#tests)
+- [Support](#support)
+- [License](#license)
+
 
 ### Appreciation Code! :)
 ```C
@@ -124,25 +124,28 @@ while(viewer.IsWatching()){
       
 **Hogy is néz ki egy futtatás?**
 - Fontos hogy a Web Service-t indítsuk elsőnek
+</br>
 ![](http://g.recordit.co/NBknPS3f0r.gif)
     
 **Hogy tudok belépni?**
 - Jelenleg két-két belépési felhasználónév/jelszó kombináció érhető el a kliensek számára
+</br>
 ![](http://g.recordit.co/KVKKcPzcyA.gif)
 
 **Mit tud az Asszisztens?**
 - Érkezési idő módosítás
 - Páciens felvétel
 - Törlés
-
+</br>
 ![](http://g.recordit.co/uDMb9TWt6N.gif)
 
 **Mit tud az Orvos?**
 - Páciens adatok megtekintése
 - Diagnózis felvétele
 - Törlés
-
+</br>
 ![](http://g.recordit.co/NI34dMilH5.gif)
+
 ## Tests
 
 **Kliens oldalon használt Unit Test-ek**
