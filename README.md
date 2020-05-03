@@ -23,7 +23,7 @@
 
 
 - Autentikáció adatbázison keresztül történik.
-- Minden orvosnak/asszisztensnek külön belépési név-belépési kód biztosítás
+- Minden orvosnak/asszisztensnek külön belépési név-belépési kód biztosítva.
 
 **Autentikáció akcióban**
 
@@ -85,8 +85,7 @@ while(viewer.IsWatching()){
 - Asszisztens oldalon már rögzített páciensek érkezési idejének módosítása orvos kérésére.
 - Asszisztens oldalon páciensek eltávolítása az adatbázisból esetleges lemondás esetén.
 - Asszisztens oldalon adatbázis frissítése orvosi oldalon való módosítás esetén.
-
-
+</br></br>
 - Orvos oldalon külön lista az aznapra érkező betegek nevével.
 - Orvos oldalon külön lista a jövőben érkező betegek nevével.
 - Orvos oldalon külön lista a már diagnoszizált betegek nevével (Asszisztens ezeket már nem látja).
@@ -96,7 +95,8 @@ while(viewer.IsWatching()){
 - Orvos oldalon páciensek eltávolítása az adatbázisból.
 
 
-## Documentation (Optional)
+## Documentation
+
 ## Tests
 
 
