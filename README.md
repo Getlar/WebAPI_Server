@@ -30,7 +30,7 @@
 
 **Adatbevitel akcióban**
 
-![](http://g.recordit.co/6x6kktPhQt.gif)
+//
 
 ## Table of Contents (Optional)
 
