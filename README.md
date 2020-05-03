@@ -12,15 +12,11 @@
 
 <img src="https://i.imgur.com/c280YNU.png" title="HealthCare" alt="Imgur">
 
-</br>
 ### Felhasználói felület - Orvos
-</br>
 
 <img src="https://i.imgur.com/bNf9Nad.png" title="HealthCare" alt="Imgur">
 
-</br>
 ### Felhasználói felület - Asszisztens
-</br>
 
 <img src="https://i.imgur.com/xGLP4jZ.png" title="HealthCare" alt="Imgur">
 
@@ -32,9 +28,7 @@
 
 ![](ursula.gif)
 
-</br>
 **Adatbevitel akcióban**
-</br>
 
 ![](http://g.recordit.co/6x6kktPhQt.gif)
 
@@ -79,7 +73,6 @@ while(viewer.IsWatching()){
 
 **A szoftver a következő funkciókkal lett ellátva:**
 
-</br></br>
 - Asszisztens oldalon minden dolgozó egyedi felhasznaló/kód kombinációt kérhet adatbiztonság érdekében.
 - Asszisztens oldalon páciensek felvétele adatbázisba ezzel rögzítve az érkező betegeket.
 - Asszisztens oldalon már rögzített páciensek érkezési idejének módosítása orvos kérésére.
