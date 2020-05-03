@@ -30,7 +30,7 @@
 
 **Adatbevitel akcióban**
 
-//
+![](http://g.recordit.co/6x6kktPhQt.gif)
 
 ## Table of Contents (Optional)
 
@@ -148,7 +148,7 @@ while(viewer.IsWatching()){
 - Törlés
 <br>
 
-![](http://g.recordit.co/NI34dMilH5.gif)
+![](http://g.recordit.co/6x6kktPhQt.gif)
 
 ** **
 ## Tests
