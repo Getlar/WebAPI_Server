@@ -124,26 +124,30 @@ while(viewer.IsWatching()){
       
 **Hogy is néz ki egy futtatás?**
 - Fontos hogy a Web Service-t indítsuk elsőnek
-</br>
+<br>
+
 ![](http://g.recordit.co/NBknPS3f0r.gif)
     
 **Hogy tudok belépni?**
 - Jelenleg két-két belépési felhasználónév/jelszó kombináció érhető el a kliensek számára
-</br>
+<br>
+
 ![](http://g.recordit.co/KVKKcPzcyA.gif)
 
 **Mit tud az Asszisztens?**
 - Érkezési idő módosítás
 - Páciens felvétel
 - Törlés
-</br>
+<br>
+
 ![](http://g.recordit.co/uDMb9TWt6N.gif)
 
 **Mit tud az Orvos?**
 - Páciens adatok megtekintése
 - Diagnózis felvétele
 - Törlés
-</br>
+<br>
+
 ![](http://g.recordit.co/NI34dMilH5.gif)
 
 ## Tests
