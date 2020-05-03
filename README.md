@@ -8,18 +8,19 @@
 
 ## Rövid Galéria
 
-</br></br>
 ### Autentikációs lehetőség (Orvos és Asszisztens egyaránt)
 
 <img src="https://i.imgur.com/c280YNU.png" title="HealthCare" alt="Imgur">
 
-</br></br>
+</br>
 ### Felhasználói felület - Orvos
+</br>
 
 <img src="https://i.imgur.com/bNf9Nad.png" title="HealthCare" alt="Imgur">
 
-</br></br>
+</br>
 ### Felhasználói felület - Asszisztens
+</br>
 
 <img src="https://i.imgur.com/xGLP4jZ.png" title="HealthCare" alt="Imgur">
 
@@ -31,7 +32,9 @@
 
 ![](ursula.gif)
 
+</br>
 **Adatbevitel akcióban**
+</br>
 
 ![](http://g.recordit.co/6x6kktPhQt.gif)
 
@@ -55,7 +58,6 @@ while(viewer.IsWatching()){
 ```
 
 
-</br></br>
 ## Installation
 
 - Klónozás
@@ -63,22 +65,18 @@ while(viewer.IsWatching()){
 - Orvos és asszisztens alkalmazás elindítása
 
 
-</br></br>
 ### Az Orvos klienst megtalálod a következő link-en:
 
 - <a href="https://github.com/Getlar/WebAPI_Client_Doctor" target="_blank">Orvos</a>
 
 
-</br></br>
 ### Az Asszisztens klienst megtalálod a következő link-en:
 
 - <a href="https://github.com/Getlar/WebAPI_Client_Assistant" target="_blank">Asszisztens</a>
 
 
-</br></br>
 ## Features
 
-</br></br>
 **A szoftver a következő funkciókkal lett ellátva:**
 
 </br></br>
@@ -87,7 +85,7 @@ while(viewer.IsWatching()){
 - Asszisztens oldalon már rögzített páciensek érkezési idejének módosítása orvos kérésére.
 - Asszisztens oldalon páciensek eltávolítása az adatbázisból esetleges lemondás esetén.
 - Asszisztens oldalon adatbázis frissítése orvosi oldalon való módosítás esetén.
-</br></br>
+</br></br></br>
 - Orvos oldalon külön lista az aznapra érkező betegek nevével.
 - Orvos oldalon külön lista a jövőben érkező betegek nevével.
 - Orvos oldalon külön lista a már diagnoszizált betegek nevével (Asszisztens ezeket már nem látja).
@@ -95,13 +93,11 @@ while(viewer.IsWatching()){
 - Orvos oldalon diagnózis beírása.
 - Orvos oldalon adatbázis frissítése asszisztens oldalon való módosítás esetén.
 - Orvos oldalon páciensek eltávolítása az adatbázisból.
-</br></br>
 
 ## Documentation
 
 ## Tests
 
-</br></br>
 **Kliens oldalon használt Unit Test-ek**
 
 
@@ -169,7 +165,6 @@ while(viewer.IsWatching()){
 
 ```
 
-</br></br>
 ## Support
 
 A következő helyeken megtalálhatsz!
@@ -180,7 +175,6 @@ A következő helyeken megtalálhatsz!
 
 ---
 
-</br></br>
 ## License
 
 Copyright (C) <2020>  <Takács Tamás>
