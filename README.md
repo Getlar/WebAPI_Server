@@ -39,7 +39,6 @@
 - [Features](#features)
 - [Support](#support)
 - [License](#license)
-- [Usage](#usage)
 - [Features](#features)
 - [Documentation](#documentation)
 - [Tests](#tests)
@@ -65,22 +64,108 @@ while(viewer.IsWatching()){
 
 ### Az Orvos klienst megtalálod a következő link-en:
 
-- <a href="https://github.com/Getlar/WebAPI_Client_Doctor">Orvos</a>
+- <a href="https://github.com/Getlar/WebAPI_Client_Doctor" target="_blank">Orvos</a>
 
 
 
 ### Az Asszisztens klienst megtalálod a következő link-en:
 
-- <a href="https://github.com/Getlar/WebAPI_Client_Assistant">Asszisztens</a>
-
+- <a href="https://github.com/Getlar/WebAPI_Client_Assistant" target="_blank">Asszisztens</a>
 
 
 
 ## Features
-## Usage (Optional)
-## Documentation (Optional)
-## Tests (Optional)
 
+
+**A szoftver a következő funkciókkal lett ellátva:**
+
+
+- Asszisztens oldalon minden dolgozó egyedi felhasznaló/kód kombinációt kérhet adatbiztonság érdekében.
+- Asszisztens oldalon páciensek felvétele adatbázisba ezzel rögzítve az érkező betegeket.
+- Asszisztens oldalon már rögzített páciensek érkezési idejének módosítása orvos kérésére.
+- Asszisztens oldalon páciensek eltávolítása az adatbázisból esetleges lemondás esetén.
+- Asszisztens oldalon adatbázis frissítése orvosi oldalon való módosítás esetén.
+
+
+- Orvos oldalon külön lista az aznapra érkező betegek nevével.
+- Orvos oldalon külön lista a jövőben érkező betegek nevével.
+- Orvos oldalon külön lista a már diagnoszizált betegek nevével (Asszisztens ezeket már nem látja).
+- Orvos oldalon páciensek adatainak megtekintés, írás tiltva.
+- Orvos oldalon diagnózis beírása.
+- Orvos oldalon adatbázis frissítése asszisztens oldalon való módosítás esetén.
+- Orvos oldalon páciensek eltávolítása az adatbázisból.
+
+
+## Documentation (Optional)
+## Tests
+
+
+**Kliens oldalon használt Unit Test-ek**
+
+
+- CSV (Comma Separated Value) fileból kapott adatok
+- Metódusból generált adatok
+- Property-ből generált adatok
+
+```C#
+
+        [DataTestMethod]
+        [DynamicData(nameof(GetData),DynamicDataSourceType.Method)]
+        public void ValidateSSN2(string arg, bool expected)
+        {
+            PersonWindow pw = new PersonWindow(null);
+            bool result = pw.ValidateSocialSecurityNumber(arg);
+            Assert.AreEqual(expected, result);
+        }
+
+        public static IEnumerable<object[]> GetData()
+        {
+            yield return new object[] { "245 255  332", false };
+            yield return new object[] { " 255 332", false };
+            yield return new object[] { "245 abc 332", false };
+            yield return new object[] { "111 ", false };
+            yield return new object[] { " ", false };
+            yield return new object[] { "123 123 123", true };
+        }
+
+        [DataTestMethod]
+        [DynamicData(nameof(GetData2), DynamicDataSourceType.Property)]
+        public void ValidateName2(string arg, bool expected)
+        {
+            PersonWindow pw = new PersonWindow(null);
+            bool result = pw.ValidateName(arg);
+            Assert.AreEqual(expected, result);
+        }
+
+        public static IEnumerable<object[]> GetData2
+        {
+            get
+            {
+                yield return new object[] { "Matyas KIRALY", false };
+                yield return new object[] { "Nincs Igazsag", true };
+                yield return new object[] { "D N ", false };
+                yield return new object[] { "FF D", false };
+                yield return new object[] { "Igen Nem", true };
+                yield return new object[] { "ddd dd", false };
+            }
+        }
+
+        public TestContext TestContext { get; set; }
+
+        [DataTestMethod]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV",
+            @"Data\dates.csv",
+            "dates#csv", DataAccessMethod.Sequential)]
+        public void ValidateDate2()
+        {
+            PersonWindow pw = new PersonWindow(null);
+            string arg = Convert.ToString(TestContext.DataRow["Date"].ToString());
+            bool expected = Convert.ToBoolean(TestContext.DataRow["Expected"].ToString());
+            bool result = pw.ValidateDate(arg);
+            Assert.AreEqual(expected, result);
+        }
+
+```
 
 
 ## Support
