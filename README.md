@@ -22,7 +22,7 @@
 
 
 - Autentikáció adatbázison keresztül történik.
-- Minden orvosnak/asszisztensnek külön belépési név-belépési kód biztosítva.
+- Minden orvosnak/asszisztensnek külön belépési név-belépési jelszó biztosítva.
 
 **Autentikáció akcióban**
 
@@ -73,12 +73,13 @@ while(viewer.IsWatching()){
 
 **A szoftver a következő funkciókkal lett ellátva:**
 
-- Asszisztens oldalon minden dolgozó egyedi felhasznaló/kód kombinációt kérhet adatbiztonság érdekében.
+- Asszisztens oldalon minden dolgozó egyedi felhasznaló/jelszó kombinációt kérhet adatbiztonság érdekében.
 - Asszisztens oldalon páciensek felvétele adatbázisba ezzel rögzítve az érkező betegeket.
 - Asszisztens oldalon már rögzített páciensek érkezési idejének módosítása orvos kérésére.
 - Asszisztens oldalon páciensek eltávolítása az adatbázisból esetleges lemondás esetén.
 - Asszisztens oldalon adatbázis frissítése orvosi oldalon való módosítás esetén.
-</br></br></br>
+</br></br>
+- Orvos oldalon minden dolgozó egyedi felhasznaló/jelszó kombinációt kérhet adatbiztonság érdekében.
 - Orvos oldalon külön lista az aznapra érkező betegek nevével.
 - Orvos oldalon külön lista a jövőben érkező betegek nevével.
 - Orvos oldalon külön lista a már diagnoszizált betegek nevével (Asszisztens ezeket már nem látja).
@@ -89,6 +90,59 @@ while(viewer.IsWatching()){
 
 ## Documentation
 
+**Nagyon rövid áttekintés**
+
+    A projekt magja egy REST Web Service .NET Core és WebAPI segítségével,
+    ami futtatható akár Linux vagy macOS rendszereken is. Ez a szolgáltatás
+    fogja nekünk biztosítani a páciensek adatbázisát és műveleteit.
+    Mit tartalmaz a WebAPI_Server solution:
+    
+      - PersonController.cs - HTTP metódusok
+      - Person.cs - Person osztály, ami Person property-ket tartalmaz (Név, Cím, stb.)
+      - PersonContext.cs - SQL szerverrel való kapcsolatlétrehozás
+      - PersonRepository.cs - Adatbázis műveletek
+      - Startup.cs - Konfigurációs lehetőségek beállítása
+      - Program.cs - Belépési pontja a projektnek. Web Service környezet felépítése.
+      
+    A két kliens oldalt egy-egy WPF desktop alkalmazás valósítja meg. Ennek köszönhetően
+    grafikus felülettel tudjuk ellátni a programunkat.
+    Mit tartalmaz a WebAPI_Client_Assistant solution:
+        
+      - PersonDataProvider.cs - Adatszolgáltatás Web Service-ünkön kereszül
+      - Person.cs - Person osztály, ami Person property-ket tartalmaz (Név, Cím, stb.)
+      - LoginScreen.xaml.cs - Loading Screen .xaml Controller-je
+      - MainMenu.xaml.cs - Main Menu .xaml Controller-je
+      - PersonWindow.xaml.cs - Person Window .xaml Controller-je
+      
+    Mit tartalmaz a WebAPI_Client solution:
+        
+      - PersonDataProvider.cs - Adatszolgáltatás Web Service-ünkön kereszül
+      - Person.cs - Person osztály, ami Person property-ket tartalmaz (Név, Cím, stb.)
+      - LoginScreen.xaml.cs - Loading Screen .xaml Controller-je
+      - MainMenu.xaml.cs - Main Menu .xaml Controller-je
+      - PersonWindow.xaml.cs - Person Window .xaml Controller-je
+      
+**Hogy is néz ki egy futtatás?**
+- Fontos hogy a Web Service-t indítsuk elsőnek
+![](http://g.recordit.co/NBknPS3f0r.gif)
+    
+**Hogy tudok belépni?**
+- Jelenleg két-két belépési felhasználónév/jelszó kombináció érhető el a kliensek számára
+![](http://g.recordit.co/KVKKcPzcyA.gif)
+
+**Mit tud az Asszisztens?**
+- Érkezési idő módosítás
+- Páciens felvétel
+- Törlés
+
+![](http://g.recordit.co/uDMb9TWt6N.gif)
+
+**Mit tud az Orvos?**
+- Páciens adatok megtekintése
+- Diagnózis felvétele
+- Törlés
+
+![](http://g.recordit.co/NI34dMilH5.gif)
 ## Tests
 
 **Kliens oldalon használt Unit Test-ek**
