@@ -148,7 +148,7 @@ while(viewer.IsWatching()){
 - Törlés
 <br>
 
-![](http://g.recordit.co/NI34dMilH5.gif)
+![](http://g.recordit.co/4k7J6ejffJ.gif)
 
 ** **
 ## Tests
